@@ -108,7 +108,8 @@ $(document).ready(function () {
 
     // Event handler for incoming calls
     peer.on('call', function (call) {
-        if (confirm('⚓️ Ahoy! Incoming Call! Will Ye Answer? 📞' + call.peer)) {
+        // confirm('⚓️ Ahoy! Incoming Call! Will Ye Answer? 📞' + call.peer)
+        if (true) {
             getUserMediaStream()
                 .then(stream => {
                     localStream = stream;
