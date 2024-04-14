@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --bs-body-color: #a6b0cf;
+    --bs-border-color: #36404a;
+    --bs-border-color-translucent: #39414b;
+    --bs-light-rgb: 54, 64, 74;
+    --bs-white: #262e35;
+    --bs-sidebar-menu-item-active-bg: #3e4a56;
+    --bs-danger-border-subtle: #8f2b43;
+    --bs-sidebar-bg: #36404a;
+    --bs-sidebar-menu-item-color: #a6b0cf;
+    --bs-form-valid-color: #6ae6c6;
+    --bs-success-text-emphasis: #e1fa73;
+    --bs-code-color: #df7db7;
+    --bs-body-bg: #303841;
+    --sb-track-color: #3e1f47;
+    --sb-thumb-color: #4d194d;
+    --sb-size: 8px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--bs-sidebar-bg);
+    padding: .8em;
+}
+
+/* Body */
+body {
+    color: var(--bs-sidebar-menu-item-color);
+    background-color: var(--bs-white);
+    font-family: 'Montserrat';
+    overflow-y: hidden;
+}
+
+.overflow-y-scroll {
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.container-fluid {
+    overflow-y: hidden;
+    color: var(--bs-form-valid-color);
+}
+
+/* Accordion */
+.accordion {
+    margin-bottom: 1em;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-code-color);
+    background-color: rgb(0 0 0 / 15%);
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-form-valid-color);
+}
+
+/* Custom Code */
+#mySecretCode {
+    color: var(--bs-code-color);
+    font-weight: 300;
+    cursor: pointer;
+    padding: .5em;
+    border-radius: 1em;
+    border: 1px dashed var(--bs-form-valid-color);
+}
+
+.offcanvas-title {
+    color: var(--bs-form-valid-color);
+}
+
+/* Centered Div */
+.centered-div {
+    opacity: .3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+    padding: 1em;
+    text-align: center;
+    z-index: -2;
+}
+
+/* Text Muted */
+.text-muted {
+    --bs-text-opacity: 1;
+    color: var(--bs-form-valid-color) !important;
+    font-size: .7em;
+    font-weight: bold;
+}
+
+/* Card Title */
+.card-title {
+    color: var(--bs-form-valid-color);
+    font-size: .7em;
+    font-weight: bold;
+}
+
+/* Side Menu */
+.side-menu {
+    height: 95vh;
+    background-color: var(--bs-body-bg);
+    padding: 1em;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+/* Video Container */
+.video-container {
+    padding-top: 5em;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    height: 95vh;
+    overflow-y: auto;
+}
+
+.video-container>.video-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Chat Container */
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-form-valid-color);
+    --bs-tooltip-color: #f8f9fa;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.chat-container {
+    padding-top: 1em;
+    width: 100%;
+    margin: auto;
+    margin-top: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chat-messages {
+    padding: 10px;
+    max-height: 30vh;
+    min-height: 10vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.pill1 {
+    background-color: var(--sb-thumb-color);
+}
+
+.pill2 {
+    background-color: var(--bs-danger-border-subtle);
+}
+
+.message.sender {
+    background-color: var(--bs-form-valid-color);
+    color: #fff;
+    align-self: flex-end;
+}
+
+.message.receiver {
+    background-color: #f8f9fa;
+    color: #000;
+    align-self: flex-start;
+}
+
+.message-input {
+    margin-top: 1em;
+    border-top: 1px solid var(--bs-sidebar-menu-item-active-bg);
+}
+
+/* Local Video */
+#local-video {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 200px;
+    height: 150px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#local-video.visible {
+    opacity: 1;
+}
+
+
+/* Increase z-index for EnjoyHint */
+.enjoyhint {
+    z-index: 9999 !important;
+    /* Set a high z-index value */
+}
+
+/* Increase z-index for EnjoyHint tooltips */
+.enjoyhint_tooltip {
+    z-index: 10000 !important;
+    /* Set a higher z-index value than the overlay */
+}
