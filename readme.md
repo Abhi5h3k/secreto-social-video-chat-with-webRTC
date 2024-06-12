@@ -2,8 +2,12 @@
 
 [![Abhishek LinkedIn](https://img.shields.io/badge/Abhishek-LinkedIn-blue.svg?style=for-the-badge)](https://www.linkedin.com/in/abhi5h3k/) [![Abhishek StackOverflow](https://img.shields.io/badge/Abhishek-StackOverflow-orange.svg?style=for-the-badge)](https://stackoverflow.com/users/6870223/abhi?tab=profile)
 
-Secreto is a web application developed during leisure time to explore and comprehend various concepts. It utilizes technologies like jQuery, Bootstrap, HTML, CSS, and PeerJS to facilitate video/audio calls and chatting functionalities, resembling those found in social applications.
+![image](https://github.com/Abhi5h3k/secreto-social-video-chat-with-webRTC/assets/37928721/f768cd66-fe30-4862-b3dc-ea73865f06bc)
 
+<br><br>
+
+Secreto is a web application developed during leisure time to explore and comprehend various concepts. It utilizes technologies like jQuery, Bootstrap, HTML, CSS, and PeerJS to facilitate video/audio calls and chatting functionalities, resembling those found in social applications.
+<br><br>
 ![secreto1](https://github.com/Abhi5h3k/secreto-social-video-chat-with-webRTC/assets/37928721/9c9bf805-1032-494c-b11c-859634e2d402)
 
 
